@@ -5,24 +5,26 @@
   <title>Document</title>
   <script src="lib/jquery-1.js"> </script>
   <script src="lib/index.js"> </script>
+  <script src="lib/teacher.js"> </script>
+  <script src="lib/teacherController.js"> </script>
 </head>
 <body>
   <div class="container">
-  <ul>
+  <ul id="results">
     <li> name: bob hometown: philly </li>
   </ul>
 </div>
 
-  <form >
+  <form id="teacherMaker">
     <h1> Teacher </h1>
     <p> <label for="">Name</label>
-    <input type="text" name="student[name]">
+    <input type="text" name="teacher[name]" id="name">
     </p>
     <p>
     <label for="">Hometown</label>
-    <input type="text" name="student[hometown]">
+    <input type="text" name="teacher[hometown]" id="hometown">
     </p>
-    <input type="submit">
+    <input type="submit" id="clicker">
   </form>
 </body>
 </html>
